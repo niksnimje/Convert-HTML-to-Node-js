@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Html To Node</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #0da5c8;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    .logo h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      padding-top: 9px;
+    }
+
+    /* Main Content Styling */
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      color: #4796c6;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    h4 {
+      font-size: 22px;
+      color: #0f7f8a;
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #e9f1ff;
+      border-left: 5px solid #27b7a3;
+      border-radius: 5px;
+      animation: fadeIn 1s ease;
+    }
+
+    /* Paragraph Styling */
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+      font-size: 16px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      animation: slideIn 1s ease;
+    }
+
+    p:hover {
+      transform: scale(1.02);
+    }
+
+    /* Team Member Styling */
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .team-member {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      margin: 10px;
+      flex: 1 1 calc(33% - 20px);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .team-member h5 {
+      margin: 10px 0;
+    }
+
+    .team-member a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #0da5c8;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .team-member a:hover {
+      background-color: #007bff;
+    }
+
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Keyframe animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .team-member {
+        flex: 1 1 calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <h1>MyWebsite</h1>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/products">Products</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>About Us</h1>
+    <p>Welcome to MyWebsite, where we are committed to delivering a seamless user experience through dynamic content and
+      personalized services. Our platform offers a variety of features, including a detailed Product Catalog linked
+      directly to our database, allowing you to explore our diverse range of products effortlessly.</p>
+
+    <h4>1. Company/Project Background</h4>
+    <p>Details about the company or the purpose of the project. Here, you can share the vision and mission that drives
+      your organization.</p>
+
+    <h4>2. Product or Service Descriptions</h4>
+    <p>Information on the products or services offered. Highlight key offerings that set you apart from the competition.
+    </p>
+
+    <h4>3. Team Members</h4>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocLLoKl9QjODxgUjoy6bI5JmnbwbYHO4PU2te74MXo3WYjkuFgM=s83-c-mo"
+          alt="Team Member 1">
+        <h5>Sujit Singh</h5>
+        <p>CEO & Founder</p>
+        <a href="#">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/036/338/921/small/ai-generated-friendly-businessman-offering-handshake-in-office-photo.jpg"
+          alt="Team Member 2">
+        <h5>Jane Smith</h5>
+        <p>Lead Developer</p>
+        <a href="#">View Profile</a>
+      </div>
+      <div class="team-member">
+        <img src="https://cdn.openart.ai/published/QPGIgm7NocL80xl3z35R/CQHqnJKN_Yr8u_1024.webp" alt="Team Member 3">
+        <h5>Emily Johnson</h5>
+        <p>Marketing Manager</p>
+        <a href="#">View Profile</a>
+      </div>
+    </div>
+
+    <h4>4. Technology Stack</h4>
+    <p>Technical details about the tools and frameworks used in development. Mention the technologies that power your
+      platform.</p>
+
+    <h4>5. User Guidance</h4>
+    <p>Instructions on how to navigate or use the website's features. Provide tips for users to get the most out of your
+      site.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 MyWebsite. All rights reserved.
+  </footer>
+
+  <script>
+    // Hamburger menu toggle for mobile view
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+</body>
+
+</html>
